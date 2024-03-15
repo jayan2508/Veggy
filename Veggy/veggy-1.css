@@ -1,0 +1,384 @@
+p {
+    letter-spacing: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(218, 218, 218);
+}
+
+.white {
+    color: white;
+}
+
+.font-size {
+    font-size: 40px !important;
+}
+
+.img-shop {
+    width: 60px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+input {
+    width: auto;
+    border: 2px solid rgba(4, 120, 18, 255);
+}
+
+input:hover {
+    border-radius: 0px !important;
+}
+
+button {
+    border-radius: 0px !important;
+}
+
+.btn {
+    width: 100px;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.border-card {
+    border-radius: 50% !important;
+    border: 1px solid grey;
+    background-color: white;
+    width: 28px;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    height: auto;
+    margin: 20px;
+    width: calc(23% - 25px);
+    border-radius: 5px;
+}
+
+.input-card {
+    text-align: center;
+    width: 50px;
+    border: 1px solid gray;
+}
+
+.btn-card {
+    margin-top: 10px;
+    width: auto;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-v img {
+    height: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 11% auto;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    animation-name: modalFade;
+    animation-duration: 0.9s;
+    position: relative;
+}
+@keyframes modalFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 15px;
+    padding-top: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.model-center {
+    text-align: center;
+}
+
+.model-ls {
+    letter-spacing: 0px !important;
+}
+
+.open-modal-btn {
+    cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.text-success {
+    /* color: rgba(8,116,19,255); */
+    text-align: right;
+    margin-right: 20px;
+}
+
+.img-shop {
+    width: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* -----------media qurey----------- */
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(45% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .navbar-toggler {
+        order: -1;
+    }
+
+    .form-control {
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .text-success {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .modal-content{
+        margin-top: 120px;
+    }
+}
+
+@media (max-width : 391px) {
+    body {
+        padding-top: 170px !important;
+    }
+}
+@media (max-width : 436px) {
+    .modal-content {
+        margin-top: 145px !important;
+    }
+}
+
+body {
+    padding-top: 100px;
+}
+
+.navbar.fixed-top {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-img{
+    width: 50px;
+}
+.model-shopping{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border: 1px solid grey; */
+    margin: 10px;
+    border-radius: 5px;
+    /* padding: none; */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.model-main{
+    margin-top: 30px;
+}
+.model-padding{
+   max-width: 50% !important;
+   height: 450px;
+   /* overflow: scroll; */
+}
+.model-item{
+    /* display: co; */
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.delete-item{
+    background-color: #ff4040;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 5px !important;
+}
+/* Modal */
+.modal {
+    display: none;
+    position: fixed; /* Keep it fixed */
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scrolling if the content overflows */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; /* Center the modal vertically and horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative; /* Position relative for close button */
+}
+
+/* Close Button (position fixed) */
+.close {
+    position: absolute; /* Fixed position */
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover{
+    color: #888;
+}
+
+/* Model Main Content */
+.model-main {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: absolute; /* Absolute position for scrolling content */
+    top: 25px; /* Adjust the top position as needed */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+}
+.close-button{
+    border: 1px solid grey;
+    border-radius: 5px !important;
+    background-color: rgba(24,135,85,255);
+    color: white;
+    padding: 8px;
+}
+
+
+/* CSS for the "no data match" message */
+.no-match-message {
+    display: none; /* Initially hide the message */
+    text-align: center;
+    /* padding: 20px; */
+    background-color: rgba(216,217,216,255);
+    border: 1px solid #ddd;
+    /* margin-top: 10px; */
+}
+
+.no-match-message p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* CSS for the suggestion */
+.suggestion {
+    font-style: italic;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px !important;
+}
+.letter{
+    letter-spacing: 4px !important;
+    font-size: 25px !important;
+}
+/* Pagination styling */
+.pagination {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #198655;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pagination button:disabled {
+    background-color: #adadad;
+    cursor: not-allowed;
+}
+
+.pagination button:hover {
+    background-color: #218838;
+}
